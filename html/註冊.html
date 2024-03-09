@@ -18,6 +18,7 @@
         label {
             display: block;
             margin-bottom: 8px;
+            font-weight: bold;
         }
 
         input,
@@ -36,6 +37,13 @@
             border: none;
             border-radius: 4px;
             cursor: pointer;
+        }
+        select {
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            background-color: #f8f8f8;
+
         }
 
         button:hover {
@@ -69,7 +77,12 @@
         <input type="color" id="favoriteColor" name="favoriteColor" required>
 
         <label for="bloodType">血型:</label>
-        <input type="text" id="bloodType" name="bloodType" required>
+        <select id="bloodType" name="bloodType" required>
+            <option value="A">A型</option>
+            <option value="B">B型</option>
+            <option value="AB">AB型</option>
+            <option value="O">O型</option>
+        </select>
 
         <label for="phoneNumber">電話號碼:</label>
         <div>
@@ -111,11 +124,11 @@
 
         <label>是否訂閱:</label>
         <div>
-            <input type="radio" id="subscribeYes" name="subscribe" value="yes" required>
             <label for="subscribeYes">是</label>
+            <input type="radio" id="subscribeYes" name="subscribe" value="yes" required>
 
-            <input type="radio" id="subscribeNo" name="subscribe" value="no" required>
             <label for="subscribeNo">否</label>
+            <input type="radio" id="subscribeNo" name="subscribe" value="no" required>
         </div>
 
         <label for="profilePic">上傳檔案:</label>
