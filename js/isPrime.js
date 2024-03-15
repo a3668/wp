@@ -12,4 +12,4 @@ function printisPrime(n){
         if(isPrime(i))console.log(i,'is a prime')
     }
 }
-printisPrime(100)
+printisPrime(1000)
