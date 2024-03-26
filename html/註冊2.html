@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>註冊帳號</title>
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">個人檔案註冊</h1>
+
+    <form>
+        <label for="name">姓名:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="gender">性別:</label>
+        <select id="gender" name="gender" required>
+            <option value="male">男性</option>
+            <option value="female">女性</option>
+        </select>
+
+        <label for="username">帳號:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">密碼:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="dob">出生年月日:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="favoriteColor">喜歡的顏色:</label>
+        <input type="color" id="favoriteColor" name="favoriteColor" required>
+
+        <label for="bloodType">血型:</label>
+        <select id="bloodType" name="bloodType" required>
+            <option value="A">A型</option>
+            <option value="B">B型</option>
+            <option value="AB">AB型</option>
+            <option value="O">O型</option>
+        </select>
+
+        <label for="phoneNumber">電話號碼:</label>
+        <div>
+            <select id="countryCode" name="countryCode" style="width: 30%;">
+                <option value="+886">+886 (台灣)</option>
+                <option value="+1">+1 (美國)</option>
+                <option value="+44">+44 (英國)</option>
+                <option value="+81">+81 (日本)</option>
+                <option value="+86">+86 (中國)</option>
+                <option value="+91">+91 (印度)</option>
+                <option value="+49">+49 (德國)</option>
+                <option value="+33">+33 (法國)</option>
+                <option value="+7">+7 (俄羅斯)</option>
+                <option value="+55">+55 (巴西)</option>
+                <option value="+82">+82 (韓國)</option>
+                <option value="+39">+39 (義大利)</option>
+                <option value="+34">+34 (西班牙)</option>
+                <option value="+62">+62 (印尼)</option>
+                <option value="+92">+92 (巴基斯坦)</option>
+                <option value="+90">+90 (土耳其)</option>
+                <option value="+20">+20 (埃及)</option>
+                <option value="+234">+234 (尼日利亞)</option>
+                <option value="+27">+27 (南非)</option>
+                <option value="+91">+91 (印度)</option>
+                <option value="+1">+1 (加拿大)</option>
+                <option value="+61">+61 (澳大利亞)</option>
+                <option value="+506">+506 (哥斯達黎加)</option>
+                <option value="+52">+52 (墨西哥)</option>
+                <option value="+84">+84 (越南)</option>
+                <option value="+63">+63 (菲律賓)</option>
+                <option value="+66">+66 (泰國)</option>
+                <option value="+972">+972 (以色列)</option>
+                <option value="+971">+971 (阿拉伯聯合大公國)</option>
+                <option value="+65">+65 (新加坡)</option>
+                <option value="+60">+60 (馬來西亞)</option>
+            </select>
+            <input type="tel" id="phoneNumber" name="phoneNumber" style="width: 70%;" required>
+        </div>
+
+        <label>是否訂閱:</label>
+        <div>
+            <label for="subscribeYes">是</label>
+            <input type="radio" id="subscribeYes" name="subscribe" value="yes" required>
+
+            <label for="subscribeNo">否</label>
+            <input type="radio" id="subscribeNo" name="subscribe" value="no" required>
+        </div>
+
+        <label for="profilePic">上傳檔案:</label>
+        <input type="file" id="profilePic" name="profilePic" accept="image/*">
+
+        <label for="selfIntroduction">自我介紹:</label>
+        <textarea id="selfIntroduction" name="selfIntroduction" rows="4" required></textarea>
+
+        <button type="submit">註冊</button>
+    </form>
+
+</body>
+
+</html>
