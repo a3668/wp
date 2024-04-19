@@ -1,6 +1,6 @@
 function matrixadd(a,b){
     let result = [];
-    for (let i = 0; i < a.length; i++) {
+    for(let i = 0;i<a.length;i++){
         let row = [];
         for(let j = 0;j<a[i].length;j++){
             row.push(a[i][j] + b[i][j]);

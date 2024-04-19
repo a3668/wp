@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SHA-256 轉換</title>
+    <style>
+        h2 {
+            font-size: 28px;
+        }
+        #input, #output {
+            width: 700px;
+            height: 50px;
+            font-size: 16px;
+        }
+        .input-label{
+            font-size: 20px;
+        }
+        .output-label{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>SHA-256 轉換</h2>
+
+<p class="input-label">Enter your text :</p>
+<input type="text" id="input">
+
+<button onclick="myFunction()">Convert</button>
+
+<p class="output-label">SHA-256:</p>
+<input type="text" id="output" readonly>
+
+<script>
+async function hash(string) {
+    const utf8 = new TextEncoder().encode(string);
+    const hashBuffer = await crypto.subtle.digest('SHA-256', utf8);
+    const hashArray = Array.from(new Uint8Array(hashBuffer));
+    const hashHex = hashArray
+        .map(bytes => bytes.toString(16).padStart(2, '0'))
+        .join('');
+    return hashHex;
+}
+
+async function myFunction() {
+    var input = document.getElementById("input");
+    var output = document.getElementById("output");
+    var inputText = input.value;
+    var hashedValue = await hash(inputText);
+    output.value = hashedValue;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>黃子耀的個人網頁</title>
+    <style>
+        /* 全局CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 設置body的樣式 */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            padding-left: 200px; /* 為側欄留出空間 */
+        }
+
+        /* 頭部樣式 */
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        /* 主內容區樣式 */
+        section {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* 標題和段落的樣式 */
+        h1, h2 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
+
+        /* 側欄的樣式 */
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 100%;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            transition: width 0.3s ease;
+            overflow-y: auto;
+        }
+
+        /* 側欄展開和收縮的樣式 */
+        .sidebar.collapsed {
+            width: 50px; /* 收縮狀態下的寬度 */
+        }
+
+        /* 側欄內部列表項目的樣式 */
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar li {
+            margin: 10px 0;
+        }
+
+        /* 側欄內部鏈接的樣式 */
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .sidebar a:hover {
+            background-color: #575757;
+        }
+
+        /* 切換側欄的按鈕樣式 */
+        .toggle-button {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 側欄 -->
+    <div id="sidebar" class="sidebar">
+        <ul>
+            <li><a href="#">主頁</a></li>
+            <li><a href="#">關於我</a></li>
+            <li><a href="#">專案</a></li>
+            <li><a href="#">聯絡我</a></li>
+        </ul>
+    </div>
+
+    <!-- 切換側欄的按鈕 -->
+    <button id="toggleButton" class="toggle-button">切換側欄</button>
+
+    <!-- 主內容區 -->
+    <section>
+        <h1>歡迎來到黃子耀的個人網頁</h1>
+        <p>這是主內容區域。</p>
+        <!-- 您可以在這裡添加其他內容 -->
+        <h2>自我介紹</h2>
+        <p>大家好，我是金門大學資訊工程系的一年級生，黃子耀。對於電腦科學和技術充滿熱情，我致力於學習和探索不同的領域，以擴展我的知識和技能。</p>
+
+        <h2>教育背景</h2>
+        <p>我目前就讀於金門大學資訊工程系，這裡提供了豐富的學術資源和優秀的教學團隊，讓我有機會深入研究我感興趣的領域。</p>
+
+        <h2>興趣和專長</h2>
+        <p>除了學業，我對軟體開發、演算法和人工智慧等領域有著濃厚的興趣。我喜歡參與程式設計競賽，並積極參與校內的相關活動，以拓展我的技術視野。</p>
+
+        <h2>GitHub專案</h2>
+        <p>歡迎查看我的 GitHub 專案：<a href="https://github.com/a3668/wp" target="_blank">GitHub</a></p>
+
+        <h2>圖片</h2>
+        <img src="com11.jpg" alt="我的電腦" width="100%">
+
+        <h2>聯絡方式</h2>
+        <p>如果您有任何疑問、建議或合作機會，歡迎隨時與我聯絡。</p>
+        <p>Email: s111210537@student.nqu.edu.tw</p>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+        // 選擇側欄和切換按鈕
+        const sidebar = document.getElementById("sidebar");
+        const toggleButton = document.getElementById("toggleButton");
+
+        // 切換側欄的狀態
+        toggleButton.addEventListener("click", function() {
+            sidebar.classList.toggle("collapsed");
+        });
+    </script>
+
+</body>
+</html>
