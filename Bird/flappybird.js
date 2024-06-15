@@ -50,7 +50,7 @@ window.onload = function(){
     //context.fillRect(birdX,birdY,birdWidth,birdHeight);
     
     birdImg = new Image();
-    birdImg.src = "airpica.png";
+    birdImg.src = "https://a3668.github.io/wp/Bird/airpica.png";
     birdImg.onload = function(){
         context.drawImage(birdImg, bird.x, bird.y, bird.width, bird.height);//x 座標、y 座標、寬度和高度
     }
