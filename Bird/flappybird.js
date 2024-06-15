@@ -50,18 +50,18 @@ window.onload = function(){
     //context.fillRect(birdX,birdY,birdWidth,birdHeight);
     
     birdImg = new Image();
-    birdImg.src = "/Newbird/airpica.png";
+    birdImg.src = "airpica.png";
     birdImg.onload = function(){
         context.drawImage(birdImg, bird.x, bird.y, bird.width, bird.height);//x 座標、y 座標、寬度和高度
     }
 
     topPipeImg = new Image();
-    topPipeImg.src = "/Newbird/toppipe.png";
+    topPipeImg.src = "toppipe.png";
 
     bottomPipeImg = new Image();
-    bottomPipeImg.src = "/Newbird/bottompipe.png";
+    bottomPipeImg.src = "bottompipe.png";
     
-    flapSound = new Audio("/Newbird/pixel.mp3");
+    flapSound = new Audio("pixel.mp3");
 }
 function update(){
     if(gameOver || !gameStarted){
