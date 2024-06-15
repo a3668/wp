@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>HTML5 Canvas - Draw a Rectangle</h1>
+
+<canvas id="myCanvas" width="180" height="100" style="border:1px solid black;">
+</canvas>
+
+
+<script>
+
+const canvas = document.getElementById("myCanvas");
+const ctx = canvas.getContext("2d");
+canvas.height = window.innerHeight
+canvas.width = window.innerWidth;
+//ctx.fillStyle = "red";
+//ctx.fillRect(0,0,150,75);
+
+ctx.beginPath()
+ctx.lineWidth = 3;
+ctx.fillStyle = "#FFFFFF"
+ctx.arc(100,100,50,0,Math.PI)
+ctx.fill()
+ctx.stroke()
+ctx.beginPath()
+ctx.fillStyle = "#800080"
+ctx.arc(100,100,50,Math.PI,Math.PI*2)
+ctx.fill()
+ctx.stroke()
+//畫中間的線和圈圈，指定顏色為白色
+ctx.beginPath()
+ctx.fillStyle = "#FFFFFF"
+//從圓的左邊開始
+ctx.moveTo(50,100)
+//連到中間後接著一個上半圓
+ctx.arc(100,100,10,Math.PI,Math.PI*2)
+//繞過去後再畫一條直線到圓的右邊
+ctx.lineTo(150,100)
+//最後沿著線繞回來畫一個下半圓
+ctx.arc(100,100,10,0,Math.PI*2)
+ctx.fill()
+ctx.stroke()
+
+ctx.beginPath()
+ctx.arc(100,100,5,0,Math.PI*2)
+ctx.stroke()
+
+
+</script>
+
+</body>
+</html>

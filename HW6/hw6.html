@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  width: 120px;
+  height: 150px;
+  background: rgb(13, 0, 255); /* 初始狀態下紅色背景 */
+  transition: width 2s, height 2s, background-color 0.5s; /* 設置背景顏色過渡效果 */
+  display: flex;
+  flex-direction: column; /* 設定 flex 方向為列方向 */
+  align-items: center;
+}
+
+div:hover {
+  width: 500px;
+  height: 200px;
+  background-color: rgb(13, 0, 255); /* 滑鼠移到 div 上時，保持紅色背景 */
+}
+
+div:not(:hover) {
+  background-color: #4d85ff; /* 滑鼠移出 div 時，紅色背景稍微變淡 */
+}
+
+a {
+  color: white; /* 初始狀態下連結為白色 */
+  text-decoration: none; /* 移除底線 */
+  margin: 5px 0; /* 增加上下 margin，區分不同連結 */
+  transition: color 0.5s; /* 設置字體顏色過渡效果 */
+}
+
+a:hover {
+  color: red; /* 當滑鼠移到連結上時，字體變藍色 */
+  text-decoration: underline;
+}
+</style>
+</head>
+<body>
+
+<h1>The transition Property</h1>
+
+<p>Hover over the div element below to see the transition effect:</p>
+
+<div>
+  <a href="https://a3668.github.io/wp/html/自我介紹.html" target="_blank">自我介紹網站</a>
+  <a href="https://github.com/a3668/wp" target="_blank">GitHub 連結</a>
+  <a href="https://www.nqu.edu.tw" target="_blank">國立金門大學網站</a>
+  <a href="https://a3668.github.io/wp/HW7/hw7.html" target="_blank">SHA-256轉換</a>
+</div>
+
+    <p>如果您有任何疑問、建議或合作機會，歡迎隨時與我聯絡</p>
+    <p>Email:s111210537@student.nqu.edu.tw</p>
+
+</body>
+</html>
