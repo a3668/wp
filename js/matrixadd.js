@@ -12,4 +12,4 @@ function matrixadd(a,b){
 let matrix1 = [[1, 2], [3, 4]];
 let matrix2 = [[5, 6], [7, 8]];
 let result = matrixadd(matrix1, matrix2);
-console.log("矩阵相加结果:", result);
+console.log("矩陣相加结果:", result);
