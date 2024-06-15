@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 20px;
+}
+</style>
+</head>
+<body>
+
+<h1>寶可夢</h1>
+
+<div class="grid-container">
+  <div class="item1"> 
+    <h2>歡迎來到我的寶可夢介紹</h2>
+  </div>
+  <div class="item2"> 
+    <h3>導覽選單</h3>
+    <ul>
+      <li><a href="https://a3668.github.io/wp/html/自我介紹.html">關於我</a></li>
+      <li><a href="https://github.com/a3668/wp">專案</a></li>
+    </ul>
+  </div>
+  <div class="item3"> 
+    <h3>主要內容</h3>
+    <section id="about">
+      <h4>關於我</h4>
+      <p>這裡是關於我的介紹部分。</p>
+    </section>
+    <section id="projects">
+      <h4>專案</h4>
+      <p>這裡是我的專案介紹部分。</p>
+    </section>
+  </div>  
+  <div class="item4"> 
+    <h3>右側欄</h3>
+    <p>這裡可以放置一些額外資訊或廣告。</p>
+  </div>
+  <div class="item5"> 
+    <h3>頁尾</h3>
+    <p>聯絡我: email@example.com</p>
+  </div>
+</div>
+
+</body>
+</html>
