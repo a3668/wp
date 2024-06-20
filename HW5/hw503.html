@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving Button</title>
+    <style>
+        body {
+            height: 100vh;
+            overflow: hidden;
+            margin: 0;
+        }
+        button {
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <button id="movingButton">Button</button>
+    <script>
+        function moveButton() {
+            left += Math.random() * 200 - 100;
+            top1 += Math.random() * 200 - 100;
+
+            // Ensure button stays within the viewport
+            left = Math.max(0, Math.min(window.innerWidth - width, left));
+            top1 = Math.max(0, Math.min(window.innerHeight - height, top1));
+
+            b.style.left = left + 'px';
+            b.style.top = top1 + 'px';
+        }
+
+        let left = 100;
+        let top1 = 100;
+        const height = 50;
+        const width = 100;
+        const b = document.getElementById('movingButton');
+        b.style.left = left + 'px';
+        b.style.top = top1 + 'px';
+        b.style.height = height + 'px';
+        b.style.width = width + 'px';
+
+        setInterval(moveButton, 100);
+    </script>
+</body>
+</html>
