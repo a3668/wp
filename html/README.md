@@ -4,23 +4,21 @@
 
    ### 網頁:https://a3668.github.io/wp/html/自我介紹.html
    ### 原始碼:https://github.com/a3668/wp/blob/master/html/%E8%87%AA%E6%88%91%E4%BB%8B%E7%B4%B9.html
-   ### 完成方法：
-       內容由Chatgpt產生，我修改了姓名和學校和信箱,並在W3school上學習如何放置圖片
+   ### 完成方法：內容由Chatgpt產生，我修改了姓名和學校和信箱,並在W3school上學習如何放置圖片
 
 ---
 
 ## 作業2
 
    ### 註冊表單
-    1.沒css
-    原始碼:https://github.com/a3668/wp/blob/master/html/註冊2.html
-    網頁:https://a3668.github.io/wp/html/註冊2.html
-    2.有css
-    原始碼: https://github.com/a3668/wp/blob/master/html/註冊.html
-    網頁: https://a3668.github.io/wp/html/註冊.html
+   ### 1.沒css
+   ### 原始碼:https://github.com/a3668/wp/blob/master/html/註冊2.html
+   ### 網頁:https://a3668.github.io/wp/html/註冊2.html
+   ### 2.有css
+   ### 原始碼: https://github.com/a3668/wp/blob/master/html/註冊.html
+   ### 網頁: https://a3668.github.io/wp/html/註冊.html
    ### 完成方法：
-    架構由Chatgpt產生後,之後在W3school的HTML <select> Tag學到如何製作下拉式選單,再去維基百科國際電話區號列表查詢國際冠碼-國際電話區號
-    在stackoverflow上學習讓使用者上傳資料,並只限圖片上傳
+   ### 架構由Chatgpt產生後,之後在W3school的HTML <select> Tag學到如何製作下拉式選單,再去維基百科國際電話區號列表查詢國際冠碼-國際電話區號在stackoverflow上學習讓使用者上傳資料,並只限圖片上傳
 ---
 
 ## 作業3：JavaScript 基本練習 
@@ -93,6 +91,10 @@
    ### 原始碼:https://github.com/a3668/wp/tree/master/Bird
    ### 完成方法：透過Kenny Yip Coding的教學影片學習,之後從w3school學習加上背景音樂語法,音樂檔案來源:https://pixabay.com/music/search/genre/video%20games/
    ### 再透過chatgpt新增結算畫面
+
+---
+### 期末總整理：
+   ### 原始碼:https://github.com/a3668/wp/blob/master/html/README.md
 
 
 
