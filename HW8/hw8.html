@@ -2,7 +2,10 @@
 <html>
 <head>
 <style>
-.item1 { grid-area: header; }
+.item1 { 
+  grid-area: header; 
+  position: relative;
+}
 .item2 { grid-area: menu; }
 .item3 { grid-area: main; }
 .item4 { grid-area: right; }
@@ -25,15 +28,54 @@
   padding: 20px 0;
   font-size: 20px;
 }
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.navigation-buttons {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.navigation-buttons .button {
+  padding: 10px 20px;
+  font-size: 14px;
+}
 </style>
 </head>
 <body>
 
-<h1>寶可夢</h1>
-
 <div class="grid-container">
   <div class="item1"> 
+    <div class="navigation-buttons">
+      <button class="button" onclick="history.back()">上一頁</button>
+      <button class="button" onclick="history.forward()">下一頁</button>
+    </div>
     <h2>歡迎來到我的寶可夢介紹</h2>
+    <div class="button-container">
+      <a href="https://tw.portal-pokemon.com" class="button">寶可夢官網</a>
+      <a href="https://asia.pokemon-card.com/tw/" class="button">卡牌遊戲</a>
+      <a href="https://tw.portal-pokemon.com/play/pokedex" class="button">寶可夢圖鑑</a>
+    </div>
   </div>
   <div class="item2"> 
     <h3>導覽選單</h3>
@@ -44,22 +86,23 @@
   </div>
   <div class="item3"> 
     <h3>主要內容</h3>
-    <section id="about">
-      <h4>關於我</h4>
-      <p>這裡是關於我的介紹部分。</p>
-    </section>
-    <section id="projects">
-      <h4>專案</h4>
-      <p>這裡是我的專案介紹部分。</p>
+    <section id="history">
+      <h4>寶可夢的歷史</h4>
+      <p>寶可夢(英語:Pokémon,舊譯「神奇寶貝」)是一個跨媒體製作的作品系列,包括遊戲、動畫、漫畫、卡片遊戲及相關產品;系列最初起源於GAME FREAK代表田尻智提出的原案
+        ,於1995年開始宣傳,1996年由任天堂於Game Boy平台發行首款遊戲《寶可夢 紅·綠》。
+        因其獨特的遊戲系統廣受大眾的歡迎,初代遊戲在日本銷量即破1600(紅、綠二版本合計)。任天堂趁此熱潮,推出後續的一系列遊戲、漫畫
+        、書籍、對戰卡片及週邊產品,還聯合日本東京電視台推出電視動畫，及往後一年一度的劇場版動畫電影,更在1998年成功進軍美國,後拓展至世界各地。除了少數地區因宗教等因素受阻,系列作品已成功進入全世界183國家[2]，成為世界聞名的卡通和日本動畫形象。相關產品銷售額達數百億美元以上。
+        因為各項業務的成長,1998年成立了獨立的寶可夢公司(當時名為寶可夢中心公司,於2000年改為現名)專營,該公司為任天堂持股的子公司之一。
+        寶可夢即是寶可夢世界中的所有虛構生物的總稱。截至2024年1月,全系列的寶可夢共有1025種。</p>
     </section>
   </div>  
   <div class="item4"> 
-    <h3>右側欄</h3>
-    <p>這裡可以放置一些額外資訊或廣告。</p>
+    <h3>皮卡丘的介紹</h3>
+    <p>這裡是關於皮卡丘的介紹部分。皮卡丘是寶可夢系列中的吉祥物，以其可愛的外表和強大的電擊技能深受喜愛。</p>
   </div>
   <div class="item5"> 
-    <h3>頁尾</h3>
-    <p>聯絡我: email@example.com</p>
+    <h3>聯絡方式</h3>
+    <p>聯絡我: s111210537@student.nqu.edu.tw</p>
   </div>
 </div>
 

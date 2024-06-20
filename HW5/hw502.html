@@ -1,6 +1,27 @@
 <html>
     <body>
-        <button onclick="job1()">Button1</button>
+        <style>
+            .button1{
+            background-color: red;
+            color: blue;
+            border: none;/*沒邊邊*/
+            height: 80px;
+            width: 120px;
+            border-radius: 2px;
+            cursor: pointer;
+            margin-right: 8px;
+            transition: opacity 0.15s;/*靠近變回透明度的時間*/
+            vertical-align: top;/*向上對齊*/
+        }
+        .button1:hover{ /*懸浮 */
+            background-color: rgb(45, 215, 127);
+            opacity: 0.7;/*不透明度*/
+        }
+        .button1:active{ /*按下後 */
+            background-color: rgb(200, 71, 123);
+        }
+        </style>
+        <button class="button1" onclick="job1()">Button1</button>
         <script>
             function job1(){
                 
