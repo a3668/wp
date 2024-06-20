@@ -17,9 +17,7 @@
    ### 2.有css
    ### 原始碼: https://github.com/a3668/wp/blob/master/html/註冊.html
    ### 網頁: https://a3668.github.io/wp/html/註冊.html
-   ### 完成方法：
-   ### 架構由Chatgpt產生後,之後在W3school的HTML <select> Tag學到如何製作下拉式選單,再去維基百科國際電話區號列表查詢國際冠碼-國際電話區號在
-   ### stackoverflow上學習讓使用者上傳資料,並只限圖片上傳
+   ### 完成方法：架構由Chatgpt產生後,之後在W3school學到如何製作下拉式選單,再去維基百科國際電話區號列表查詢國際冠碼-國際電話區號在stackoverflow上學習讓使用者上傳資料,並只限圖片上傳
 ---
 
 ## 作業3：JavaScript 基本練習 
