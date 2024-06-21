@@ -71,7 +71,7 @@
 ### 作業9：請做一個有繪圖的網頁 （難度不限，可以用套件）
    ### 網頁:https://a3668.github.io/wp/HW9/hw9.html
    ### 原始碼:https://github.com/a3668/wp/blob/master/HW9/hw9.html
-   ### 完成方法：參考iT邦幫忙,和w3school的語法製作
+   ### 完成方法：[參考](https://ithelp.ithome.com.tw/articles/10212146),和w3school的語法製作
 ---
 ### 作業10：請用 groq 大語言模型 LLM 做一個簡單的網頁應用
    ### 網頁:https://a3668.github.io/wp/HW10/weather.html
