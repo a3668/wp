@@ -76,7 +76,7 @@
 ### 作業10：請用 groq 大語言模型 LLM 做一個簡單的網頁應用
    ### 網頁:https://a3668.github.io/wp/HW10/weather.html
    ### 原始碼:https://github.com/a3668/wp/tree/master/HW10
-   ### 完成方法：在weatherapi註冊後取得key後,並請chatgpt產生代碼,最後自己再測試網頁找出會遇到的問題並解決
+   ### 完成方法：在[weatherapi](https://www.weatherapi.com/)註冊後取得key後,並請chatgpt產生代碼,最後自己再測試網頁找出會遇到的問題並解決
 ---
 ### 作業11：請閱讀 denoApiService + Blog 的程式碼，並寫下你的理解，然後為程式碼加上詳細的註解
    ### 原始碼:https://github.com/a3668/wp/blob/master/denoApiService/hand.md
@@ -88,7 +88,7 @@
 ### 期中作業：請寫一個網頁作品
    ### 網頁:https://a3668.github.io/wp/Bird/index.html
    ### 原始碼:https://github.com/a3668/wp/tree/master/Bird
-   ### 完成方法：透過Kenny Yip Coding的教學影片學習,之後從w3school學習加上背景音樂語法,音樂檔案來源:https://pixabay.com/music/search/genre/video%20games/
+   ### 完成方法：透過[Kenny Yip Coding](https://www.youtube.com/watch?v=jj5ADM2uywg)的教學影片學習,之後從w3school學習加上背景音樂語法,音樂檔案來源:[音檔來源](https://pixabay.com/music/search/genre/video%20games/)
    ### 再透過chatgpt新增結算畫面
 
 ---
